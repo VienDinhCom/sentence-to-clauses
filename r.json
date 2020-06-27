@@ -1,0 +1,652 @@
+{
+  "docDate": "2020-06-27T09:18:32",
+  "sentences": [
+    {
+      "index": 0,
+      "parse": "(ROOT\n  (S\n    (NP (PRP We))\n    (VP (MD can)\n      (VP (VB remove)\n        (NP (JJS most) (NNS sins))\n        (SBAR (IN if)\n          (S\n            (NP (PRP we))\n            (VP (VBP have)\n              (S\n                (NP (DT a) (NN witness))\n                (VP (VBG standing)\n                  (PRT (IN by))\n                  (SBAR (IN as)\n                    (S\n                      (NP (PRP we))\n                      (VP (VBP are)\n                        (ADJP (RB about)\n                          (S\n                            (VP (TO to)\n                              (VP (VB go)\n                                (ADJP (JJ wrong))))))))))))))))\n    (. .)))",
+      "binaryParse": "(ROOT\n  (S\n    (NP (PRP We))\n    (@S\n      (VP (MD can)\n        (VP\n          (@VP (VB remove)\n            (NP (JJS most) (NNS sins)))\n          (SBAR (IN if)\n            (S\n              (NP (PRP we))\n              (VP (VBP have)\n                (S\n                  (NP (DT a) (NN witness))\n                  (VP\n                    (@VP (VBG standing)\n                      (PRT (IN by)))\n                    (SBAR (IN as)\n                      (S\n                        (NP (PRP we))\n                        (VP (VBP are)\n                          (ADJP (RB about)\n                            (S\n                              (VP (TO to)\n                                (VP (VB go)\n                                  (ADJP (JJ wrong))))))))))))))))\n      (. .))))",
+      "basicDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "remove"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 2,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "sins",
+          "dependent": 4,
+          "dependentGloss": "most"
+        },
+        {
+          "dep": "obj",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 5,
+          "dependentGloss": "sins"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 6,
+          "dependentGloss": "if"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 7,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "advcl",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 8,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "witness",
+          "dependent": 9,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 10,
+          "dependentGloss": "witness"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 11,
+          "dependentGloss": "standing"
+        },
+        {
+          "dep": "compound:prt",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 12,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "mark",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 13,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 14,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "cop",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 15,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "advcl",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 16,
+          "dependentGloss": "about"
+        },
+        {
+          "dep": "mark",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 17,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 18,
+          "dependentGloss": "go"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 19,
+          "dependentGloss": "wrong"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "remove"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 2,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "sins",
+          "dependent": 4,
+          "dependentGloss": "most"
+        },
+        {
+          "dep": "obj",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 5,
+          "dependentGloss": "sins"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 6,
+          "dependentGloss": "if"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 7,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "advcl:if",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 8,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "witness",
+          "dependent": 9,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 10,
+          "dependentGloss": "witness"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 11,
+          "dependentGloss": "standing"
+        },
+        {
+          "dep": "compound:prt",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 12,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "mark",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 13,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 14,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 14,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "cop",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 15,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "advcl:as",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 16,
+          "dependentGloss": "about"
+        },
+        {
+          "dep": "mark",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 17,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 18,
+          "dependentGloss": "go"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 19,
+          "dependentGloss": "wrong"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "enhancedPlusPlusDependencies": [
+        {
+          "dep": "ROOT",
+          "governor": 0,
+          "governorGloss": "ROOT",
+          "dependent": 3,
+          "dependentGloss": "remove"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 1,
+          "dependentGloss": "We"
+        },
+        {
+          "dep": "aux",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 2,
+          "dependentGloss": "can"
+        },
+        {
+          "dep": "amod",
+          "governor": 5,
+          "governorGloss": "sins",
+          "dependent": 4,
+          "dependentGloss": "most"
+        },
+        {
+          "dep": "obj",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 5,
+          "dependentGloss": "sins"
+        },
+        {
+          "dep": "mark",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 6,
+          "dependentGloss": "if"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 7,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "advcl:if",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 8,
+          "dependentGloss": "have"
+        },
+        {
+          "dep": "det",
+          "governor": 10,
+          "governorGloss": "witness",
+          "dependent": 9,
+          "dependentGloss": "a"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 10,
+          "dependentGloss": "witness"
+        },
+        {
+          "dep": "ccomp",
+          "governor": 8,
+          "governorGloss": "have",
+          "dependent": 11,
+          "dependentGloss": "standing"
+        },
+        {
+          "dep": "compound:prt",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 12,
+          "dependentGloss": "by"
+        },
+        {
+          "dep": "mark",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 13,
+          "dependentGloss": "as"
+        },
+        {
+          "dep": "nsubj",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 14,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "nsubj:xsubj",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 14,
+          "dependentGloss": "we"
+        },
+        {
+          "dep": "cop",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 15,
+          "dependentGloss": "are"
+        },
+        {
+          "dep": "advcl:as",
+          "governor": 11,
+          "governorGloss": "standing",
+          "dependent": 16,
+          "dependentGloss": "about"
+        },
+        {
+          "dep": "mark",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 17,
+          "dependentGloss": "to"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 16,
+          "governorGloss": "about",
+          "dependent": 18,
+          "dependentGloss": "go"
+        },
+        {
+          "dep": "xcomp",
+          "governor": 18,
+          "governorGloss": "go",
+          "dependent": 19,
+          "dependentGloss": "wrong"
+        },
+        {
+          "dep": "punct",
+          "governor": 3,
+          "governorGloss": "remove",
+          "dependent": 20,
+          "dependentGloss": "."
+        }
+      ],
+      "tokens": [
+        {
+          "index": 1,
+          "word": "We",
+          "originalText": "We",
+          "characterOffsetBegin": 0,
+          "characterOffsetEnd": 2,
+          "pos": "PRP",
+          "before": "",
+          "after": " "
+        },
+        {
+          "index": 2,
+          "word": "can",
+          "originalText": "can",
+          "characterOffsetBegin": 3,
+          "characterOffsetEnd": 6,
+          "pos": "MD",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 3,
+          "word": "remove",
+          "originalText": "remove",
+          "characterOffsetBegin": 7,
+          "characterOffsetEnd": 13,
+          "pos": "VB",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 4,
+          "word": "most",
+          "originalText": "most",
+          "characterOffsetBegin": 14,
+          "characterOffsetEnd": 18,
+          "pos": "JJS",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 5,
+          "word": "sins",
+          "originalText": "sins",
+          "characterOffsetBegin": 19,
+          "characterOffsetEnd": 23,
+          "pos": "NNS",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 6,
+          "word": "if",
+          "originalText": "if",
+          "characterOffsetBegin": 24,
+          "characterOffsetEnd": 26,
+          "pos": "IN",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 7,
+          "word": "we",
+          "originalText": "we",
+          "characterOffsetBegin": 27,
+          "characterOffsetEnd": 29,
+          "pos": "PRP",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 8,
+          "word": "have",
+          "originalText": "have",
+          "characterOffsetBegin": 30,
+          "characterOffsetEnd": 34,
+          "pos": "VBP",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 9,
+          "word": "a",
+          "originalText": "a",
+          "characterOffsetBegin": 35,
+          "characterOffsetEnd": 36,
+          "pos": "DT",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 10,
+          "word": "witness",
+          "originalText": "witness",
+          "characterOffsetBegin": 37,
+          "characterOffsetEnd": 44,
+          "pos": "NN",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 11,
+          "word": "standing",
+          "originalText": "standing",
+          "characterOffsetBegin": 45,
+          "characterOffsetEnd": 53,
+          "pos": "VBG",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 12,
+          "word": "by",
+          "originalText": "by",
+          "characterOffsetBegin": 54,
+          "characterOffsetEnd": 56,
+          "pos": "IN",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 13,
+          "word": "as",
+          "originalText": "as",
+          "characterOffsetBegin": 57,
+          "characterOffsetEnd": 59,
+          "pos": "IN",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 14,
+          "word": "we",
+          "originalText": "we",
+          "characterOffsetBegin": 60,
+          "characterOffsetEnd": 62,
+          "pos": "PRP",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 15,
+          "word": "are",
+          "originalText": "are",
+          "characterOffsetBegin": 63,
+          "characterOffsetEnd": 66,
+          "pos": "VBP",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 16,
+          "word": "about",
+          "originalText": "about",
+          "characterOffsetBegin": 67,
+          "characterOffsetEnd": 72,
+          "pos": "RB",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 17,
+          "word": "to",
+          "originalText": "to",
+          "characterOffsetBegin": 73,
+          "characterOffsetEnd": 75,
+          "pos": "TO",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 18,
+          "word": "go",
+          "originalText": "go",
+          "characterOffsetBegin": 76,
+          "characterOffsetEnd": 78,
+          "pos": "VB",
+          "before": " ",
+          "after": " "
+        },
+        {
+          "index": 19,
+          "word": "wrong",
+          "originalText": "wrong",
+          "characterOffsetBegin": 79,
+          "characterOffsetEnd": 84,
+          "pos": "JJ",
+          "before": " ",
+          "after": ""
+        },
+        {
+          "index": 20,
+          "word": ".",
+          "originalText": ".",
+          "characterOffsetBegin": 84,
+          "characterOffsetEnd": 85,
+          "pos": ".",
+          "before": "",
+          "after": ""
+        }
+      ]
+    }
+  ]
+}
