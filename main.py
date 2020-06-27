@@ -17,7 +17,7 @@ def extractByLabel():
   subtexts = []
 
   for subtree in tree[0].subtrees():
-    if subtree.label()=="SBAR":
+    if subtree.label()==label:
       subtexts.append(' '.join(subtree.leaves()))
 
   return json.dumps({
