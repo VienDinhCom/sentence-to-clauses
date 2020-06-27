@@ -1,0 +1,18 @@
+version: "3.6"
+
+services:
+  corenlp:
+    image: frnkenstien/corenlp
+    restart: always
+    ports:
+      - 9000:9000
+
+  clauses:
+    image: maxvien/clauses
+    restart: always
+    depends_on:
+      - "corenlp"
+    ports:
+      - 5000:5000
+    environment:
+      CORENLP_URL: http://corenlp:9000

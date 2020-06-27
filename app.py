@@ -1,32 +1,33 @@
-from nltk import Tree
-import requests
+import os
 import json
+from nltk import Tree
+from flask import Flask
+from flask import request
+from nltk.parse import CoreNLPParser
 
-string = 'The soul should have someone it can respect, by whose example it can make its inner sanctum more inviolable.'
+app = Flask(__name__)
 
-parse_str = requests.post('http://corenlp.run/?properties={"annotators":"parse"}', data = {'data': string}).json()['sentences'][0]['parse']
+CORENLP_URL = os.getenv('CORENLP_URL')
+
+parser = CoreNLPParser(url=CORENLP_URL)
+
+@app.route('/', methods = ['POST'])
+def extractByLabel(): 
+  text = request.form['text']
+  label = request.form['label']
+
+  tree = list(parser.raw_parse(text))
+  subtexts = []
+
+  for subtree in tree[0].subtrees():
+    if subtree.label()==label:
+      subtexts.append(' '.join(subtree.leaves()))
+
+  return json.dumps({
+    "subtexts": subtexts,
+    "fulltext": ' '.join(tree[0].leaves())
+  })
 
 
-t = Tree.fromstring(parse_str)
-
-subtexts = []
-for subtree in t.subtrees():
-    if subtree.label()=="SBAR":
-
-        print(subtree.leaves())
-
-        #print subtree.leaves()
-        subtexts.append(' '.join(subtree.leaves()))
-print(subtexts)
-
-presubtexts = subtexts[:]       # ADDED IN EDIT for leftover check
-
-for i in reversed(range(len(subtexts)-1)):
-    subtexts[i] = subtexts[i][0:subtexts[i].index(subtexts[i+1])]
-
-for text in subtexts:
-    print(text)
-
-# ADDED IN EDIT - Not sure for generalized cases
-leftover = presubtexts[0][presubtexts[0].index(presubtexts[1])+len(presubtexts[1]):]
-print(leftover)
+if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0')
